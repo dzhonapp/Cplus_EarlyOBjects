@@ -32,10 +32,7 @@ int main()
         // Split cmd into array of parameters
         parseCmd(cmd, params);
 
-        // Exit?
-        if(strcmp(params[0], "exit") == 0) break;
-
-        // Execute command
+       // Execute command
         if(executeCmd(params) == 0) break;
     }
 
