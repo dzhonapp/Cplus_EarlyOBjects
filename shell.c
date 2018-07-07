@@ -56,12 +56,8 @@ int executeCmd(char** params)
     // Fork process
     pid_t pid = fork();
 
-    // Error
-    if (pid == -1) {
-        char* error = strerror(errno);
-        printf("fork: %s\n", error);
-        return 1;
-    }
+    // Error needs some pids work here
+  
 
     // Child process Needs Some work here
     
